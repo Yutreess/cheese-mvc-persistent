@@ -16,6 +16,7 @@ public class Cheese {
     @GeneratedValue
     private int id;
 
+
     @NotNull
     @Size(min=3, max=15)
     private String name;
@@ -27,12 +28,14 @@ public class Cheese {
     private CheeseType type;
 
     public Cheese(String name, String description) {
+        this();
         this.name = name;
         this.description = description;
     }
 
-    public Cheese() { }
+    public Cheese() {}
 
+    // ID
     public int getId() {
         return id;
     }
