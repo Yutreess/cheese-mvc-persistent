@@ -28,7 +28,7 @@ public class Cheese {
     private Category category;
 
     @ManyToMany(mappedBy = "cheeses")
-    private List<Menu> menu;
+    private List<Menu> menus;
 
     public Cheese(String name, String description) {
         this();
